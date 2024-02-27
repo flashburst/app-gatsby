@@ -71,7 +71,6 @@ class SafeAppConnector extends AbstractConnector {
         ]);
         return !!safe;
     }
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     async setupNetwork(_networkId) {
         return false;
     }

@@ -6,7 +6,6 @@ import { useActivator } from './hooks/useActivator.jsx';
 import { useDeactivator } from './hooks/useDeactivator.jsx';
 import { useEagerConnect } from './hooks/useEagerConnect.jsx';
 import { getLibrary, getProviderOrSigner } from './utils/web3.js';
-import { setupMetamaskForFirefox } from './wallets/metamask-firefox.js';
 import { getWallets } from './wallets/wallets.js';
 import { useInactiveListener } from './hooks/useInactiveListener.jsx';
 import { walletTrackerLS } from './utils/local-storage.js';
@@ -57,7 +56,7 @@ function ConnectWalletProvider({ children, connectors, supportedNetworks, getIni
     useEagerConnect(selectedChainId);
     useInactiveListener(logout);
     useEffect(() => {
-        setupMetamaskForFirefox().catch(console.error);
+        // import('./wallets/metamask-firefox.js').then(x => x.setupMetamaskForFirefox());
     }, []);
     useEffect(() => {
         getInitialNetwork()

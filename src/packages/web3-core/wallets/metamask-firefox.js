@@ -2,7 +2,8 @@
 import { isFirefox } from '../vendor/user-agent.js';
 async function setupMetamaskForFirefox() {
     // Return if window.ethereum is present or if the browser is not firefox
-    if (!isFirefox() || typeof window.ethereum === 'undefined') {
+    console.log('test setupMetamaskForFirefox');
+    if (!isFirefox() || typeof window === 'undefined' || typeof window.ethereum === 'undefined') {
         return;
     }
     const { initializeProvider } = await import('@metamask/providers');
