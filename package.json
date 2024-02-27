@@ -1,0 +1,21 @@
+{
+  "name": "gatsby-client-routes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/flashburst/gatsby-client-routes",
+  "author": "flashburst <82953782+flashburst@users.noreply.github.com>",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "gatsby": "^5.13.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "license": "MIT"
+}
